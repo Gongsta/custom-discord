@@ -1,5 +1,6 @@
 from discord.ext import commands
 import discord
+from config import TOKEN
 client = commands.Bot(command_prefix='.')
 
 @client.command()
@@ -25,4 +26,4 @@ async def leave(ctx):
 
 
 
-client.run("NzE0Mjk5NjI5NjE2ODg5OTU2.XugAEA.CKHfpnut_NE44yhTZVVM1Qs1cRk")
+client.run(TOKEN)
