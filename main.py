@@ -17,17 +17,16 @@ async def on_message(message):
 
     print(message.author, ":", message.content)
 
-    if message.content.startswith('$hello'):
+    if message.content.startswith('.hello'):
         await message.channel.send('Hello!')
 
 
-    if message.content == "close":
+    if message.content == ".close":
         await client.close()
 
-    if message.content == "attendance":
+    if message.content == ".attendance":
         channel = message.author.voice.channel
         members = channel.members
-
 
         memberList = ""
 
@@ -42,7 +41,6 @@ async def on_message(message):
 
 
         await message.channel.send(memberList)
-
 
 
 
